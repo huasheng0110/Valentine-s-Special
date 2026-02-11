@@ -1,38 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import IntersectObserver from '@/components/common/IntersectObserver';
+import React, { useState } from 'react';
+import { Home } from './components/valentine/Home';
+import { MailContent } from './components/valentine/MailContent';
 import { Toaster } from '@/components/ui/sonner';
 
-import routes from './routes';
-
-// import { AuthProvider } from '@/contexts/AuthContext';
-// import { RouteGuard } from '@/components/common/RouteGuard';
-
 const App: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Router>
-      {/*<AuthProvider>*/}
-      {/*<RouteGuard>*/}
-      <IntersectObserver />
-      <div className="flex flex-col min-h-screen">
-        {/*<Header />*/}
-        <main className="flex-grow">
-          <Routes>
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              element={route.element}
-            />
-          ))}
-          <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </main>
+    <div className="flex justify-center bg-muted/30 min-h-screen">
+      <div className="w-full max-w-[375px] bg-background shadow-2xl relative overflow-x-hidden min-h-screen flex flex-col">
+        {!isOpen ? (
+          <Home onOpen={() => setIsOpen(true)} />
+        ) : (
+          <MailContent />
+        )}
+        <Toaster />
       </div>
-      <Toaster />
-      {/*</RouteGuard>*/}
-      {/*</AuthProvider>*/}
-    </Router>
+    </div>
   );
 };
 
