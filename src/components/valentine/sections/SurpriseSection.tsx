@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sparkles, Dices } from 'lucide-react';
+import { Dices } from 'lucide-react';
 
 export const SurpriseSection: React.FC = () => {
   const [showOffer, setShowOffer] = useState(false);
@@ -44,7 +44,7 @@ export const SurpriseSection: React.FC = () => {
             <div className="bg-white p-8 rounded-[40px] border-4 border-primary hand-shadow text-center space-y-4">
               <h2 className="text-4xl font-hand text-primary font-extrabold tracking-widest">✨ OFFER 降临 ✨</h2>
               <div className="h-[2px] bg-primary/20 w-full" />
-              <p className="text-2xl font-hand text-foreground">陪我过一辈子协议</p>
+              <p className="text-2xl font-hand text-foreground">陪我过每一个明天协议</p>
               <p className="text-sm opacity-60">正式录用通知</p>
             </div>
             

@@ -9,3 +9,6 @@ declare module '@/types/types' {
     [key: string]: unknown;
   }
 }
+
+declare module 'qrcode';
+declare module 'miaoda-sc-plugin';

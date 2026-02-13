@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, FileText } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 interface FileCardProps {
   index: number;

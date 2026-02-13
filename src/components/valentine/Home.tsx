@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mailbox, User, Mail } from 'lucide-react';
+import { Mailbox, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface HomeProps {

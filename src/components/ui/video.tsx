@@ -19,7 +19,8 @@ import {
     DurationDisplay,
     FullscreenToggle,
     VolumeMenuButton,
-    ProgressControl
+    ProgressControl,
+    Player
 } from 'video-react';
 import 'video-react/dist/video-react.css';
 
@@ -102,6 +103,7 @@ display: block;
         <TimeDivider key="time-divider" />
         <DurationDisplay key="duration-display" />
         <ProgressControl key="progress-control" />
+        {/* @ts-ignore */}
         <FullscreenToggle key="fullscreen-toggle" />
         </ControlBar>
         <BigPlayButton position="center" />

@@ -18,7 +18,7 @@ export const CalendarSection: React.FC = () => {
               <div key={i} className={`h-8 flex items-center justify-center rounded-lg ${isTarget ? 'bg-primary/20 relative' : ''}`}>
                 <span className={isTarget ? 'font-bold text-primary' : ''}>{day}</span>
                 {isTarget && (
-                  <div className="absolute -top-1 -right-1 text-xs">💔</div>
+                  <div className="absolute -top-1 -right-1 text-xs">❤️</div>
                 )}
               </div>
             );

@@ -20,19 +20,19 @@ export const MailContent: React.FC = () => {
 
       {/* Files List */}
       <div className="space-y-4">
-        <FileCard index={1} title="我们的120天 · 2025.10.17">
+        <FileCard index={1} title="一份说明">
           <CalendarSection />
         </FileCard>
 
-        <FileCard index={2} title="应聘人 · 未来男朋友">
+        <FileCard index={2} title="应聘人 · Watson">
           <ResumeSection />
         </FileCard>
 
-        <FileCard index={3} title="终身甲方协议（最终版）">
+        <FileCard index={3} title="坚持一个甲方">
           <AgreementSection />
         </FileCard>
 
-        <FileCard index={4} title="我们的脚印 · 未完待续">
+        <FileCard index={4} title="未完待续">
           <MapSection />
         </FileCard>
 
