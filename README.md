@@ -1,6 +1,4 @@
-# 欢迎使用你的秒哒应用代码包
-秒哒应用链接
-    URL:https://www.miaoda.cn/projects/app-9ka0teu1rls1
+# 欢迎来到我的个人项目
 
 ## 介绍
 
