@@ -40,11 +40,12 @@ export const BackgroundMusic = () => {
     <div className="absolute top-4 right-4 z-[100]">
       <audio
         ref={audioRef}
-        src="/music/You And Me.mp3"
+        src="./music/You And Me.mp3"
         loop
         preload="auto"
       />
       <button
+        type="button"
         onClick={togglePlay}
         className={cn(
           "flex items-center justify-center w-9 h-9 rounded-full shadow-md border border-white/20 backdrop-blur-sm transition-all duration-300",
