@@ -24,4 +24,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    allowedHosts: ["525b57d0.r25.cpolar.top"],
+  },
 });
